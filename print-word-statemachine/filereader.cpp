@@ -1,6 +1,5 @@
 #include "filereader.h"
 #include <QtDebug>
-#include <iostream>
 
 FileReader::FileReader(const QString fileName_,
                        QObject* parent_) :
@@ -22,6 +21,4 @@ void FileReader::timerEvent(QTimerEvent* event_) {
     this->textstream >> character;
 
     emit characterRead(character);
-    std::cout << character.toLatin1()
-              << std::flush;
 }

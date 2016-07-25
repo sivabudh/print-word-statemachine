@@ -9,7 +9,7 @@ class FileReader : public QObject
     Q_OBJECT
 public:
     explicit FileReader(QString const fileName_,
-                        QObject* parent = nullptr);
+                        QObject* parent_ = nullptr);
 
     void start();
 

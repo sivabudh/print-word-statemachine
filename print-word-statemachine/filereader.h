@@ -22,5 +22,6 @@ protected:
 private:
     QFile			file;
     QTextStream		textstream;
+    int				timerId;
 };
 

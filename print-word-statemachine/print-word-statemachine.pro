@@ -11,11 +11,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     filereader.cpp \
-    charstreamstatemachine.cpp
+    charstreamprocessor.cpp
 
 HEADERS += \
     filereader.h \
-    charstreamstatemachine.h
+    charstreamprocessor.h
 
 DISTFILES += \
     sample_input.txt

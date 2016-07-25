@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+# Ignoring all builds
+**/build*
+**/*.autosave

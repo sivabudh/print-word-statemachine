@@ -1,11 +1,15 @@
 #include "printstate.h"
 #include <iostream>
 #include "newcharevent.h"
+#include <QString>
+#include <QDebug>
 
+
+PrintState::PrintState(QString * textData_)
+    : textData(textData_)
+{}
 
 void PrintState::onEntry(QEvent* event_)
 {
-    auto event = static_cast<NewCharEvent*>(event_);
-    std::cout << event->value.toLatin1()
-              << std::flush;
+    qDebug() << "PrintState::onEntry";
 }

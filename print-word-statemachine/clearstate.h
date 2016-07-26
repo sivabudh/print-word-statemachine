@@ -4,6 +4,8 @@
 
 class ClearState : public QState
 {
+    Q_OBJECT
+
 public:
     ClearState();
 

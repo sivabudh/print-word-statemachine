@@ -16,7 +16,9 @@ SOURCES += main.cpp \
     printstate.cpp \
     accumulatestate.cpp \
     nonspacetransition.cpp \
-    clearstate.cpp
+    clearstate.cpp \
+    spaceencounteredtransition.cpp \
+    unconditionaltransition.cpp
 
 HEADERS += \
     filereader.h \
@@ -26,7 +28,9 @@ HEADERS += \
     printstate.h \
     accumulatestate.h \
     nonspacetransition.h \
-    clearstate.h
+    clearstate.h \
+    spaceencounteredtransition.h \
+    unconditionaltransition.h
 
 DISTFILES += \
     sample_input.txt

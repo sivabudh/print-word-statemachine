@@ -6,6 +6,8 @@
 
 class NewCharTransition : public QAbstractTransition
 {
+    Q_OBJECT
+
 public:
     NewCharTransition(QChar const value_)
         : value(value_) {}

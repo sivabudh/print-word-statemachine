@@ -17,4 +17,7 @@ signals:
 
 private:
     QStateMachine* statemachine;
+
+    // Text data manipulated by the state machine
+    QString	textData;
 };

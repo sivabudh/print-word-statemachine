@@ -12,8 +12,8 @@ public:
 
     void start();
 
-public slots:
-    void characterReceived(QChar const);
+signals:
+    void newCharacterReceived(QChar const);
 
 private:
     QStateMachine* statemachine;

@@ -2,10 +2,10 @@
 
 #include <QState>
 
-class Print : public QState
+class PrintState : public QState
 {
 public:
-    Print() {}
+    PrintState() {}
 
 protected:
     virtual void onEntry(QEvent *) Q_DECL_OVERRIDE;

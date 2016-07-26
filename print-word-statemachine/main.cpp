@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     CharStreamProcessor processor;
 
     QObject::connect(&reader, 	&FileReader::characterRead,
-                     &processor, &CharStreamProcessor::characterReceived);
+                     &processor, &CharStreamProcessor::newCharacterReceived);
 
     processor.start();
     reader.start();

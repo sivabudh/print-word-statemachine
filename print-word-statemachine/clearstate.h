@@ -2,11 +2,10 @@
 
 #include <QState>
 
-class AccumulateState : public QState
+class ClearState : public QState
 {
 public:
-    AccumulateState();
+    ClearState();
 
     virtual void onEntry(QEvent*);
 };
-

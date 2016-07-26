@@ -14,7 +14,9 @@ SOURCES += main.cpp \
     charstreamprocessor.cpp \
     newchartransition.cpp \
     printstate.cpp \
-    accumulatestate.cpp
+    accumulatestate.cpp \
+    nonspacetransition.cpp \
+    clearstate.cpp
 
 HEADERS += \
     filereader.h \
@@ -22,7 +24,9 @@ HEADERS += \
     newchartransition.h \
     newcharevent.h \
     printstate.h \
-    accumulatestate.h
+    accumulatestate.h \
+    nonspacetransition.h \
+    clearstate.h
 
 DISTFILES += \
     sample_input.txt

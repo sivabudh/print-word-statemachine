@@ -2,12 +2,11 @@
 
 #include <QDebug>
 
-ClearState::ClearState()
-{
-
-}
+ClearState::ClearState(QString * textData_)
+    : textData(textData_)
+{}
 
 void ClearState::onEntry(QEvent *)
 {
-    qDebug() << "ClearState::onEntry";
+    textData->clear();
 }

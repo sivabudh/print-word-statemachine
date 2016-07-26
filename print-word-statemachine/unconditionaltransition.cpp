@@ -9,6 +9,4 @@ bool UnconditionalTransition::eventTest(QEvent *)
 
 
 void UnconditionalTransition::onTransition(QEvent *)
-{
-    qDebug() << "UnconditionalTransition::onTransition() occurred.";
-}
+{}

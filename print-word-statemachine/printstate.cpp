@@ -9,7 +9,7 @@ PrintState::PrintState(QString * textData_)
     : textData(textData_)
 {}
 
-void PrintState::onEntry(QEvent* event_)
+void PrintState::onEntry(QEvent*)
 {
-    qDebug() << "PrintState::onEntry";
+    qDebug() << *this->textData;
 }

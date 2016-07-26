@@ -18,7 +18,7 @@ CharStreamProcessor::CharStreamProcessor(QObject* parent_) :
   , statemachine(new QStateMachine())
 {
       // Create states
-      auto clearState = new ClearState();
+      auto clearState = new ClearState(&this->textData);
       auto accumulateState = new AccumulateState(&this->textData);
       auto printState = new PrintState(&this->textData);
 

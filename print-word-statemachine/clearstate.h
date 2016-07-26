@@ -2,12 +2,17 @@
 
 #include <QState>
 
+class QString;
+
 class ClearState : public QState
 {
     Q_OBJECT
 
 public:
-    ClearState();
+    ClearState(QString *);
 
     virtual void onEntry(QEvent*);
+
+private:
+    QString * textData;
 };
